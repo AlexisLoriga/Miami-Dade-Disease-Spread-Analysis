@@ -1,7 +1,7 @@
 # Miami-Dade Disease Spread Analysis
 
 ## Overview
-The **Miami-Dade Disease Spread Analysis** project aims to analyze disease spread trends in Miami-Dade County over the past 10 years using geospatial data and advanced statistical methods. This project utilizes various technologies, including Python, R, PostgreSQL, and Tableau, to provide insights into disease patterns and inform public health decisions.
+The **Miami-Dade Disease Spread Analysis** project aims to analyze disease spread trends in Miami-Dade County over the past 10 years using geospatial data and advanced statistical methods. This project utilizes various technologies, including Python, R, PostgreSQL, QGIS, and Tableau, to provide insights into disease patterns and inform public health decisions.
 
 ## Table of Contents
 - [Project Structure](#project-structure)
@@ -15,30 +15,34 @@ The **Miami-Dade Disease Spread Analysis** project aims to analyze disease sprea
 
 ## Project Structure
 ```plaintext
-miami-dade-disease-spread-analysis/
+Miami-Dade-Disease-Spread-Analysis/
 │
-├── data/                     # Datasets
-│   ├── raw/                  # Raw data files
-│   ├── processed/            # Processed data files
-│   └── external/             # External datasets
+├── QGIS_Project/                  # Directory for QGIS project files
+│   ├── miami_dade_analysis.qgz     # Main QGIS project file
+│   └── styles/                    # Directory for QGIS style files (optional)
 │
-├── notebooks/                # Jupyter notebooks
-│   └── analysis.ipynb        # Exploratory analysis notebook
+├── data/                          # Directory for datasets
+│   ├── raw/                       # Raw data files (shapefiles, etc.)
+│   ├── processed/                 # Processed data files
+│   └── external/                  # Links or references to external datasets
 │
-├── scripts/                  # Python scripts
-│   ├── data_preprocessing.py  # Data cleaning and preprocessing
-│   ├── visualization.py       # Data visualization scripts
-│   ├── modeling.py            # Statistical modeling scripts
-│   └── main.py                # Main entry point for the project
+├── scripts/                       # Directory for Python and R scripts
+│   ├── data_processing.py          # Python script for data processing
+│   ├── analysis.R                  # R script for advanced statistical analysis
+│   └── visualization.py            # Python script for data visualization with Tableau
 │
-├── R/                        # R scripts
-│   └── advanced_analysis.R    # R script for advanced analysis
+├── maps/                          # Directory for exported maps
+│   ├── map_image.png              # Exported map image
+│   └── map_report.pdf             # Exported map report
 │
-├── reports/                  # Reports and visualizations
-│   ├── figures/               # Figures and plots
-│   └── final_report.md        # Summary of findings
+├── reports/                       # Directory for analysis reports
+│   ├── analysis_report.md          # Report summarizing findings
+│   └── figures/                    # Directory for figures used in reports
 │
-├── .gitignore                # Files to ignore in Git
-├── requirements.txt          # Python package requirements
-└── README.md                 # Project description and documentation
+├── env/                           # Directory for virtual environment (optional)
+│   └── (virtual environment files) # Contains your virtual environment files if using venv or conda
+│
+├── requirements.txt               # Python package requirements
+├── .gitignore                     # Files and folders to ignore in Git
+└── README.md                      # Project description and documentation
 
