@@ -1,0 +1,29 @@
+# Data Manipulation
+pandas
+numpy
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Geospatial Analysis
+geopandas
+shapely
+fiona
+rasterio
+pyproj
+
+# Database Interaction
+psycopg2-binary  # PostgreSQL adapter for Python
+
+# Machine Learning / Statistical Analysis
+scikit-learn
+statsmodels
+
+# Jupyter Notebook Support
+notebook
+
+# Additional Libraries (if needed)
+tensorflow  # For deep learning (if applicable)
+xgboost     # For gradient boosting models (if applicable)
